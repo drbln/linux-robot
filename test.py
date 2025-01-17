@@ -1,19 +1,32 @@
-# -*- coding: utf-8 -*
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.service import Service
 
-chrome_options = Options()
-chrome_options.binary_location = "/opt/chromium-gost/chromium-gost"
-chrome_options.add_argument("--start-maximized")
+# Укажите путь к драйверу и браузеру Chromium-GOST
+chromium_path = "/opt/chromium-gost/chromium-gost"
+webdriver_path = "/home/robot/chromedriver/chromedriver-linux64/chromedriver"
 
-driver = webdriver.Chrome(executable_path="/home/robot/chromedriver/chromedriver-linux64/chromedriver", options=chrome_options )
+# Настройка опций для Chromium-GOST
+options = webdriver.ChromeOptions()
+options.binary_location = chromium_path  # Указываем путь к Chromium-GOST
 
-driver.get("https://zakupki.gov.ru/223/ppa/public/cryptoProWarning5p.jsp?tmp=1731059967012")
-driver.implicitly_wait(3)
-button = driver.find_element_by_xpath("/html/body/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[3]/td/nobr/button[2]")
-ActionChains(driver) \
-        .click(button) \
-        .perform()
+# Инициализация веб-драйвера
+service = Service(webdriver_path)  # Указываем путь к веб-драйверу
+driver = webdriver.Chrome(service=service, options=options)
 
+try:
+    # Открыть целевую страницу
+    driver.get("https://zakupki.gov.ru/223/ppa/public/cryptoProWarning5p.jsp?tmp=1737012796746")
 
-#driver.close()
+    # Ожидание кнопки и нажатие
+    button = WebDriverWait(driver, 20).until(
+        EC.element_to_be_clickable((By.XPATH, "//button[contains(text(), 'Продолжить работу')]"))
+    )
+    button.click()
+
+    # Дальнейшая работа на сайте
+    print("Кнопка успешно нажата.")
+except Exception as e:
+    print(f"Произошла ошибка: {e}")
