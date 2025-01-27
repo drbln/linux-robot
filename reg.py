@@ -1,4 +1,3 @@
-import logging
 from func import *
 from var import *
 import time
