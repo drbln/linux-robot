@@ -37,7 +37,6 @@ class Reg:
         """Основной метод для выполнения действий с обработкой ошибок."""
         while True:
             try:
-                print("Запуск автоматизации...")
                 self.clear_browser_data()
                 self.run_first_window()
                 self.perform_actions()
