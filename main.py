@@ -1,5 +1,4 @@
-from reg import Reg
-from reg import Post
+from reg import Reg, Post
 from var import driver
 
 if __name__ == "__main__":
