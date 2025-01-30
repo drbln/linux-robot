@@ -64,12 +64,7 @@ class Post:
         driver.find_element(By.ID, "sign_and_submit_btn").click()
         time.sleep(10)
         pyautogui.press('enter')
-        button555 = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, "body > div.jquery-msgbox > div > form > div.jquery-msgbox-buttons > button:nth-child(2)"))
-        )
-
-        # Кликаем через JavaScript
-        driver.execute_script("arguments[0].click();", button555)
+        button_click(button13)
         time.sleep(100)
 
   
