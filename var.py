@@ -3,7 +3,7 @@ from selenium.webdriver.chrome.service import Service
 
 # Укажите путь к драйверу и браузеру Chromium-GOST
 chromium_path = "/opt/chromium-gost/chromium-gost"
-webdriver_path = "/home/robot/chromedriver/chromedriver-linux64/chromedriver"
+webdriver_path = "~/chromedriver-linux64/chromedriver"
 
 # Настройка опций для Chromium-GOST
 options = webdriver.ChromeOptions()
