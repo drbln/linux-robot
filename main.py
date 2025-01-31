@@ -6,4 +6,4 @@ if __name__ == "__main__":
     automation.execute()
 
     posting = Post(driver)
-    posting.perform_actions()
+    posting.execute()

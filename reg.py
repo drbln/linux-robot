@@ -52,11 +52,10 @@ class Post:
     
     def perform_actions(self):
         #Выполнение основной последовательности действий
-        follow_the_link(link2)
-        button_click(button7)
+#        follow_the_link(link2)
+#        button_click(button7)
         button_click(button10)
         skip_warnings()
-
         button_click(button11)
         time.sleep(10)
         switch_New_window()
@@ -65,6 +64,22 @@ class Post:
         time.sleep(10)
         pyautogui.press('enter')
         button_click(button13)
-        time.sleep(100)
+        switch_New_window()
+        time.sleep(20)
+
+    def execute(self):
+        follow_the_link(link2)
+        while True:
+            if button_check(driver, button7):
+                try:
+                    button_click(button7)
+                    thread = threading.Thread(target=self.perform_actions)
+                    thread.start()
+                    thread.join()
+                except:
+                    self.driver.refresh()
+                    time.sleep(5)
+            else: 
+                break
 
   

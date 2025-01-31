@@ -33,3 +33,7 @@ def skip_warnings():
                 print(f"Произошла ошибка: {e}")
                 break
 
+def button_check(driver, button):
+    elements = driver.find_elements(By.XPATH, button)
+    return len(elements) > 0
+
