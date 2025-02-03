@@ -20,7 +20,7 @@ class Reg:
         """Запуск первого окна в отдельном потоке."""
         thread = threading.Thread(target=first_window)
         thread.start()
-        time.sleep(10)
+        time.sleep(20)
         pyautogui.press('enter')
 
     def perform_actions(self):
