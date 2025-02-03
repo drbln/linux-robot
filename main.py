@@ -10,5 +10,6 @@ if __name__ == "__main__":
         posting = Post(driver)
         posting.execute()
 
+        driver.quit()
         time.sleep(900)
 
