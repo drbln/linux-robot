@@ -4,7 +4,14 @@
 PYTHON_SCRIPT="/home/robot/linux-robot/main.py"
 
 while true; do
-    python3 "$PYTHON_SCRIPT"    
+    killall chrome
+    sleep 10
+    OUTPUT=$(python3 "$PYTHON_SCRIPT" 2>&1)
+
+    if echo "$OUTPUT" | grep -q "ReadTimeoutError"; then
+        continue
+    fi 
+
     for i in {0..4}; do
         f=$((5 - $i))
         echo "Минут до перезапуска:" $f
