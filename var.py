@@ -43,5 +43,5 @@ button10 = "/html/body/div[3]/div[2]/div[1]/div[3]/div[2]/div/form/div[2]/div[2]
 button11 = "/html/body/div[5]/div/form/div[3]/button[1]"
 
 ## При размещении
-button12 = "//button[contains(text(), 'Подписать и разместить')]"
+button12 = "/html/body/div[3]/div[4]/a[2]/input"
 button13 = "/html/body/div[5]/div/form/div[4]/button[2]"
