@@ -1,5 +1,5 @@
 #!/bin/bash
-
+export DISPLAY=:0
 # Путь к Python-скрипту
 PYTHON_SCRIPT="/home/robot/linux-robot/main.py"
 
