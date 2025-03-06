@@ -29,7 +29,11 @@ def switch_New_window():
 def skip_warnings():
     while True:
             try:
-                WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#dialogDiv > div:nth-child(3) > a:nth-child(1) > input"))).click()
+                if desired_text in driver.page_source:
+                    driver.close()
+                    driver.quit()
+                else:
+                    WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#dialogDiv > div:nth-child(3) > a:nth-child(1) > input"))).click()
             except:
                 break
 

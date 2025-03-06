@@ -24,6 +24,9 @@ link1 = "https://zakupki.gov.ru/223/ppa/public/cryptoProWarning5p.html"
 link2 = "https://lk.zakupki.gov.ru/223/purchase/private/notification/search.html?customerOrgId=&creatorAgencyId=&purchaseMethodId=&purchaseNumber=&purchaseName=&creatorAgency=&_createdCustomerRepresentative=on&_createdBlockedCustomer=on&purchaseMethodName=&purchaseStages=NOTICE_FORMATION&_purchaseStages=on&_purchaseStages=on&purchaseStages=APPLICATION_FILING&_purchaseStages=on&_purchaseStages=on&purchaseStages=COMMISSION_ACTIVITIES&_purchaseStages=on&purchaseDescription=&organName=&okpd2Id=&okpd2Text=&okpd2Code=&organName=&okved2Id=&okved2Text=&okved2Code=&_needAuthorizedConfirmationOnly=on&_fromElectronicMarketplace=on&_importedFromVSRI=on&_importedFromKISRMIS=on&_unpublishedDataExists=on&_cooperativeOnly=on&_onlyNotPlacement=on&activeTab=0&pageCounts=0,0,0,0,0,0"
 # Ccылка договоров
 
+# Текст для поиска при предупреждениях
+desired_text1 = "Пыщь пыщь пыщь"
+desired_text2 = "Перечень 1 или Перечень 2 ПП РФ О мерах по предоставлению национального режима"
 
 # Блок кнопок для использования
 ## При авторизации
