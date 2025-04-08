@@ -23,7 +23,9 @@ link1 = "https://zakupki.gov.ru/223/ppa/public/cryptoProWarning5p.html"
 # Ccылка для извещений
 link2 = "https://lk.zakupki.gov.ru/223/purchase/private/notification/search.html?customerOrgId=&creatorAgencyId=&purchaseMethodId=&purchaseNumber=&purchaseName=&creatorAgency=&_createdCustomerRepresentative=on&_createdBlockedCustomer=on&purchaseMethodName=&purchaseStages=NOTICE_FORMATION&_purchaseStages=on&_purchaseStages=on&purchaseStages=APPLICATION_FILING&_purchaseStages=on&_purchaseStages=on&purchaseStages=COMMISSION_ACTIVITIES&_purchaseStages=on&purchaseDescription=&organName=&okpd2Id=&okpd2Text=&okpd2Code=&organName=&okved2Id=&okved2Text=&okved2Code=&_needAuthorizedConfirmationOnly=on&_fromElectronicMarketplace=on&_importedFromVSRI=on&_importedFromKISRMIS=on&_unpublishedDataExists=on&_cooperativeOnly=on&_onlyNotPlacement=on&activeTab=0&pageCounts=0,0,0,0,0,0"
 # Ccылка договоров
-
+link3 = "https://lk.zakupki.gov.ru/223/contract/private/contract/clean-search.html"
+# Ccылка договоров окно подписания
+link3a = "https://lk.zakupki.gov.ru/223/contract/private/contract/show_popup_paging.html?publishUrl"
 
 # Блок кнопок для использования
 ## При авторизации
@@ -34,14 +36,19 @@ button4 = "/html/body/esia-root/div/esia-login/div/div/esia-eds/div/button[1]/h3
 button5 = "/html/body/esia-root/esia-modal/div/div[2]/div/ng-component/div/article/div[4]/div[2]/div[1]/esia-input-password/div/input" # Поле для заполнения пароля
 button6 = "//button[contains(text(), 'Подтвердить')]"
 ## Для размещения
-### Первые 3 обьекта
+### Первые 3 обьекта Извещений
 button7 = "/html/body/div[3]/div[2]/div[1]/div[3]/div[2]/div/form/div[2]/div[2]/table/tbody/tr[1]/td[2]/div[2]/img"
 button8 = "/html/body/div[3]/div[2]/div[1]/div[3]/div[2]/div/form/div[2]/div[2]/table/tbody/tr[2]/td[2]/div[2]/img"
 button9 = "/html/body/div[3]/div[2]/div[1]/div[3]/div[2]/div/form/div[2]/div[2]/table/tbody/tr[3]/td[2]/div[2]/img"
-#### Стрелка и кнопка разместить
+#### "Разместить" из выпадающего меню и кнопка "Разместить"
 button10 = "/html/body/div[3]/div[2]/div[1]/div[3]/div[2]/div/form/div[2]/div[2]/table/tbody/tr[1]/td[2]/div[2]/div/ul/li[1]/a" 
 button11 = "/html/body/div[5]/div/form/div[3]/button[1]"
 
 ## При размещении
 button12 = "/html/body/div[3]/div[4]/a[2]/input"
+button12a = "//input[@value='Подписать и разместить']"
 button13 = "/html/body/div[5]/div/form/div[4]/button[2]"
+
+###  обьекты Договоров
+button14 = "/html/body/div[3]/div[2]/div[1]/div[3]/div[2]/div/form/div[2]/div[2]/table/tbody/tr[1]/td[2]/div/img"
+button15 = "/html/body/div[3]/div[2]/div[1]/div[3]/div[2]/div/form/div[2]/div[2]/table/tbody/tr[1]/td[2]/div/div/ul/li[2]/a"

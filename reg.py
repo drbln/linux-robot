@@ -76,4 +76,35 @@ class Post:
             else: 
                 break
 
-  
+
+class Post2:
+    def __init__(self, driver):
+        self.driver = driver
+    
+    def perform_actions(self):
+        #Выполнение основной последовательности действий
+        button_click(button15)
+        skip_warnings()
+        button_click(button11)
+        time.sleep(10)
+        switch_to_window2(link3a)
+        button_click(button12a)
+        button_click(button13)
+        switch_New_window()
+        time.sleep(10)
+
+    def execute(self):
+        
+        while True:
+            follow_the_link(link3)
+            if button_check(driver, button14):
+                try:
+                    pyautogui.press('end')
+                    button_click(button14)
+                    self.perform_actions()
+
+                except:
+                    self.driver.quit()
+                    time.sleep(5)
+            else: 
+                break
