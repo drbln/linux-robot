@@ -83,7 +83,6 @@ class Post2:
     
     def perform_actions(self):
         #Выполнение основной последовательности действий
-        button_click(button15)
         skip_warnings()
         button_click(button11)
         time.sleep(10)
@@ -97,14 +96,27 @@ class Post2:
         
         while True:
             follow_the_link(link3)
-            if button_check(driver, button14):
+            if button_check(driver, button15):
                 try:
                     pyautogui.press('end')
-                    button_click(button14)
+                    button_click(button15)
+                    button_click(button15a)
                     self.perform_actions()
 
                 except:
                     self.driver.quit()
                     time.sleep(5)
+
+            elif button_check(driver, button14):
+                try:
+                    pyautogui.press('end')
+                    button_click(button14)
+                    button_click(button14a)
+                    self.perform_actions()
+
+                except:
+                    self.driver.quit()
+                    time.sleep(5)
+
             else: 
                 break

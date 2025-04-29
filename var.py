@@ -51,4 +51,6 @@ button13 = "/html/body/div[5]/div/form/div[4]/button[2]"
 
 ###  обьекты Договоров
 button14 = "/html/body/div[3]/div[2]/div[1]/div[3]/div[2]/div/form/div[2]/div[2]/table/tbody/tr[1]/td[2]/div/img"
-button15 = "/html/body/div[3]/div[2]/div[1]/div[3]/div[2]/div/form/div[2]/div[2]/table/tbody/tr[1]/td[2]/div/div/ul/li[2]/a"
+button14a = "/html/body/div[3]/div[2]/div[1]/div[3]/div[2]/div/form/div[2]/div[2]/table/tbody/tr[1]/td[2]/div/div/ul/li[2]/a"
+button15 = "/html/body/div[3]/div[2]/div[1]/div[3]/div[2]/div/form/div[2]/div[2]/table/tbody/tr[2]/td[2]/div/img"
+button15a = "/html/body/div[3]/div[2]/div[1]/div[3]/div[2]/div/form/div[2]/div[2]/table/tbody/tr[2]/td[2]/div/div/ul/li[2]/a"
